@@ -1,0 +1,22 @@
+﻿{
+  "defaultAssembly": "Ativ5.Infrastructure",
+  "modules": [
+    {
+      "type": "Ativ5.Infrastructure.Modules.WebApiModule",
+      "properties": {
+      }
+    },
+    {
+      "type": "Ativ5.Infrastructure.Modules.ApplicationModule",
+      "properties": {
+      }
+    },
+    {
+      "type": "Ativ5.Infrastructure.Modules.InfrastructureModule",
+      "properties": {
+        "ConnectionString": "mongodb://10.0.75.1:27017",
+        "DatabaseName": "Ativ5-V01"
+      }
+    }
+  ]
+}
