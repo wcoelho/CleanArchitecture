@@ -19,13 +19,13 @@ https://paulovich.net/clean-architecture-for-net-applications/
 
 **Diagrama de Domínios**
 
-![Alt text](Ativ5.WebApi\Assets\diagrama.jpg?raw=true "Diagrama de Domínio")  
+![Diagrama de Domínios](Ativ5.WebApi/Assets/diagrama.jpg)  
 
 **Business Entities**  
 
-![Alt text](Ativ5.WebApi\Assets\domains_entities.jpg?raw=true "Domínios e Entidades")
+![Domínios e Entidades de Negócio](Ativ5.WebApi/Assets/domains_entities.jpg)
 
 **Value Objects**  
 
-![Alt text](Ativ5.WebApi\Assets\vos.jpg?raw=true "Objetos de Valor")
+![Objetos de Valor](Ativ5.WebApi/Assets/vos.jpg)
 
