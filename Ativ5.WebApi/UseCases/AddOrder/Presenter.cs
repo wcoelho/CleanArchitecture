@@ -1,15 +1,15 @@
-﻿namespace Ativ5.WebApi.UseCases.AddOrder
+﻿namespace Ativ5.WebApi.UseCases.Checkout
 {
     using Ativ5.Application;
-    using Ativ5.Application.UseCases.AddOrder;
+    using Ativ5.Application.UseCases.Checkout;
     using Microsoft.AspNetCore.Mvc;
 
-    public class Presenter : IOutputBoundary<AddOrderOutput>
+    public class Presenter : IOutputBoundary<CheckoutOutput>
     {
         public IActionResult ViewModel { get; private set; }
-        public AddOrderOutput Output { get; private set; }
+        public CheckoutOutput Output { get; private set; }
 
-        public void Populate(AddOrderOutput response)
+        public void Populate(CheckoutOutput response)
         {
             Output = response;
 

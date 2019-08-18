@@ -13,7 +13,7 @@ namespace Ativ5.WebApi.Utils
             {
                 var order = new OrderDetailsModel(
                     item.BasketId,
-                    item.TotalPrice,
+                    item.FinalPrice,
                     item.OrderDate
                 );           
                 ordersModel.Add(order);

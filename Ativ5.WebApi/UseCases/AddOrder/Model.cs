@@ -1,4 +1,4 @@
-﻿namespace Ativ5.WebApi.UseCases.AddOrder
+﻿namespace Ativ5.WebApi.UseCases.Checkout
 {
     using System;
 

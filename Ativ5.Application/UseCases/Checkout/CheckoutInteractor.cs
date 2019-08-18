@@ -1,4 +1,4 @@
-﻿namespace Ativ5.Application.UseCases.AddOrder
+﻿namespace Ativ5.Application.UseCases.Checkout
 {
     using System.Threading.Tasks;
     using Ativ5.Domain.Customers;
@@ -6,17 +6,17 @@
     using Ativ5.Domain.Baskets;
     using Ativ5.Application.Outputs;
 
-    public class AddOrderInteractor : IInputBoundary<AddOrderInput>
+    public class CheckoutInteractor : IInputBoundary<CheckoutInput>
     {
         private readonly ICustomerReadOnlyRepository customerReadOnlyRepository;
         private readonly IBasketReadOnlyRepository basketReadOnlyRepository;
-        private readonly IOutputBoundary<AddOrderOutput> outputBoundary;
+        private readonly IOutputBoundary<CheckoutOutput> outputBoundary;
         private readonly IOutputConverter outputConverter;
         
-        public AddOrderInteractor(
+        public CheckoutInteractor(
             ICustomerReadOnlyRepository customerReadOnlyRepository,
             IBasketReadOnlyRepository basketReadOnlyRepository,
-            IOutputBoundary<AddOrderOutput> outputBoundary,
+            IOutputBoundary<CheckoutOutput> outputBoundary,
             IOutputConverter outputConverter)
         {
             this.customerReadOnlyRepository = customerReadOnlyRepository;
@@ -25,7 +25,7 @@
             this.outputConverter = outputConverter;
         }
 
-        public async Task Process(AddOrderInput input)
+        public async Task Process(CheckoutInput input)
         {
             Customer customer = await customerReadOnlyRepository.Get(input.CustomerId);
             if (customer == null)
@@ -38,7 +38,7 @@
             CustomerOutput customerOutput = outputConverter.Map<CustomerOutput>(customer);
             BasketOutput basketOutput = outputConverter.Map<BasketOutput>(basket);
 
-            AddOrderOutput output = new AddOrderOutput(customerOutput, basketOutput, input.OrderDate, basket.GetTotalPrice().Value);
+            CheckoutOutput output = new CheckoutOutput(customerOutput, basketOutput, input.OrderDate, basket.GetTotalPrice().Value);
 
             outputBoundary.Populate(output);
         }

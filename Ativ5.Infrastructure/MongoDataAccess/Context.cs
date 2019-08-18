@@ -3,6 +3,7 @@
     using Ativ5.Domain;
     using Ativ5.Domain.Baskets;
     using Ativ5.Domain.Customers;
+    using Ativ5.Domain.Orders;
     using MongoDB.Bson.Serialization;
     using MongoDB.Driver;
 

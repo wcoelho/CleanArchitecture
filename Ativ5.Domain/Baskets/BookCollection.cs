@@ -20,9 +20,9 @@
             }
         }
     
-        public Amount GetTotalPrice()
+        public FinalPrice GetTotalPrice()
         {
-            Amount totalAmount = 0;
+            FinalPrice totalAmount = 0;
 
             foreach (var item in Items)
             {

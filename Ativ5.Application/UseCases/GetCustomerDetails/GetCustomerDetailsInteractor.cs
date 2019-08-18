@@ -5,7 +5,7 @@
     using Ativ5.Domain.Customers;
     using System.Collections.Generic;
     using Ativ5.Application.Outputs;
-    using Ativ5.Domain.Baskets;
+    using Ativ5.Domain.Orders;
 
     public class GetCustomerDetailsInteractor : IInputBoundary<GetCustomerDetailsInput>
     {

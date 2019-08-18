@@ -6,7 +6,7 @@
         public Guid OrderId { get; set; }
         public Guid CustomerId { get; set; }
         public Guid BasketId { get; set; }
-        public double TotalPrice { get; set; }
+        public double FinalPrice { get; set; }
         public DateTime OrderDate { get; set; }
     }
 }

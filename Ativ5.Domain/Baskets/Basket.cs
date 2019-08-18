@@ -29,7 +29,7 @@
              Books.Remove(removal);
         }
 
-        public Amount GetTotalPrice()
+        public FinalPrice GetTotalPrice()
         {
             return Books.GetTotalPrice();
         }

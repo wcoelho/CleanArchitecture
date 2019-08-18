@@ -1,21 +1,21 @@
-﻿namespace Ativ5.Application.UseCases.AddOrder
+﻿namespace Ativ5.Application.UseCases.Checkout
 {
     using Ativ5.Application.Outputs;
     using System;
 
-    public class AddOrderOutput
+    public class CheckoutOutput
     {
         public CustomerOutput Customer { get; private set; }
         public BasketOutput Basket { get; private set; }
         public DateTime OrderDate { get; private set; }
         public double TotalPrice { get; private set; }
 
-        public AddOrderOutput()
+        public CheckoutOutput()
         {
 
         }
 
-        public AddOrderOutput(CustomerOutput customer, BasketOutput basket, DateTime orderDate, double totalPrice)
+        public CheckoutOutput(CustomerOutput customer, BasketOutput basket, DateTime orderDate, double totalPrice)
         {
             Customer = customer;
             Basket = basket;

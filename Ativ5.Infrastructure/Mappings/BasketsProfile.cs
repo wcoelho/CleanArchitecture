@@ -17,7 +17,7 @@
 
             CreateMap<Basket, OrderOutput>()
                 .ForMember(dest => dest.BasketId, opt => opt.MapFrom(src => src.Id))
-                .ForMember(dest => dest.TotalPrice, opt => opt.MapFrom(src => src.GetTotalPrice().Value));
+                .ForMember(dest => dest.FinalPrice, opt => opt.MapFrom(src => src.GetTotalPrice().Value));
 	
             CreateMap<Basket, DeleteOutput>()
                 .ForMember(dest => dest.BasketId, opt => opt.MapFrom(src => src.Id));

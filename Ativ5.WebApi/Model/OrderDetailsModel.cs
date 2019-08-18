@@ -5,12 +5,12 @@
     public class OrderDetailsModel
     {
         public Guid BasketId { get; }
-        public double Amount { get; }
+        public double FinalPrice { get; }
         public DateTime OrderDate { get; }
-        public OrderDetailsModel(Guid basketId, double amount, DateTime orderDate)
+        public OrderDetailsModel(Guid basketId, double finalPrice, DateTime orderDate)
         {
             BasketId = basketId;
-            Amount = amount;
+            FinalPrice = finalPrice;
             OrderDate = orderDate;
         }
     }

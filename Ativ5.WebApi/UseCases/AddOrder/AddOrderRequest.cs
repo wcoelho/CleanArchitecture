@@ -1,7 +1,7 @@
-﻿namespace Ativ5.WebApi.UseCases.AddOrder
+﻿namespace Ativ5.WebApi.UseCases.Checkout
 {
     using System;
-    public class AddOrderRequest
+    public class CheckoutRequest
     {
         public Guid OrderId { get; set; }
 
@@ -9,6 +9,6 @@
 
         public Guid CustomerId { get; set; }
 
-        public double Amount { get; set; }
+        public double FinalPrice { get; set; }
     }
 }

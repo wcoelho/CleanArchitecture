@@ -1,4 +1,4 @@
-﻿namespace Ativ5.Domain.Baskets
+﻿namespace Ativ5.Domain.Orders
 {
     public class OrderNotFoundException : DomainException
     {

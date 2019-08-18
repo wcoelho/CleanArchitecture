@@ -1,6 +1,5 @@
 ﻿namespace Ativ5.Domain.Customers
 {
-    using System;
     using Ativ5.Domain.ValueObjects;
 
     public class Customer : Entity

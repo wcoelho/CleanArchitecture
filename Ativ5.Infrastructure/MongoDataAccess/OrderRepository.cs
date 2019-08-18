@@ -1,7 +1,7 @@
 ﻿namespace Ativ5.Infrastructure.MongoDataAccess
 {
     using Ativ5.Application.Repositories;
-    using Ativ5.Domain.Baskets;
+    using Ativ5.Domain.Orders;
     using MongoDB.Driver;
     using System;
     using System.Collections.Generic;
